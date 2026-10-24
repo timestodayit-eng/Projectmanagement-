@@ -1,0 +1,19 @@
+{
+  "name": "recruitment-operations-command-center",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "node scripts/demo.mjs",
+    "check": "node --check server/server.mjs && node --check server.js && node --check public/app.js",
+    "test": "python3 tests/smoke_test.py"
+  },
+  "engines": {
+    "node": ">=20 <25"
+  },
+  "description": "Hostinger Cloud ready RecruitOps pilot with MySQL state persistence; React frontend and Node API.",
+  "dependencies": {
+    "mysql2": "3.24.6"
+  }
+}
